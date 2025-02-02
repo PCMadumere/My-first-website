@@ -1,0 +1,113 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /*background-image: url(images/roompics1.jpg);
+    background-size: cover;
+    background-position: center;*/
+}
+
+.container {
+    max-width: 600px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Profile Image */
+.profile-image img {
+    margin: 20px auto;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+/* Hobbies section with flexbox */
+.hobbies ul{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+}
+
+.hobbies ul li {
+    background: #2ecc71;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* main heading */
+h1{
+    text-align: center;
+color: #2c3e50;
+margin-top: 20px;
+}
+
+/* Paragraph */
+p{
+    text-align: center;
+    margin: 10px 20px;
+}
+
+/* Image Styling */
+img{
+    display: block;
+    margin: 20px auto;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    border: 2px solid #2c3e50;
+}
+
+/* Hobbies Section */
+h2{
+    color: #2c3e50;
+    text-align: center;
+}
+
+ul{
+    list-style-type: square;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+ul li{
+    margin: 5px 0;
+    text-align: center;
+}
+
+/* Link Styling */
+a{
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+/*Button Styling */
+button{
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #3498db;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #2980b9;
+}
