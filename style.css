@@ -1,5 +1,5 @@
 /* General Page Styling */
-body {
+/*body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -9,13 +9,12 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    /*background-image: url(images/roompics1.jpg);
+    background-image: url(images/flower\ 1.jpg);
     background-size: cover;
-    background-position: center;*/
-}
+    background-position: center;
+}*/
 
 .container {
-    max-width: 600px;
     background: #fff;
     padding: 20px;
     border-radius: 10px;
@@ -26,7 +25,7 @@ body {
 /* Profile Image */
 .profile-image img {
     margin: 20px auto;
-    border-radius: 50%;
+    border-radius: 10px;
     width: 150px;
     height: 150px;
 }
@@ -49,8 +48,8 @@ body {
 /* main heading */
 h1{
     text-align: center;
-color: #2c3e50;
-margin-top: 20px;
+color: #96cfae;
+margin-top: 10px;
 }
 
 /* Paragraph */
@@ -95,6 +94,7 @@ a{
 
 a:hover{
     text-decoration: underline;
+    background-color: #dce5eb;
 }
 
 /*Button Styling */
@@ -110,4 +110,75 @@ button{
 
 button:hover{
     background-color: #2980b9;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navigation Bar */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #2edfb8;
+    padding: 15px 20px;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Logo */
+.container{
+font-size: 20px;
+font-weight: bold;
+}
+
+/* Navigation Links */
+.nav-links{
+    list-style: none;
+    display: flex;
+}
+.nav-links li{
+    margin: 0 15px;
+}
+.nav-links a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+.nav-links a:hover{
+    color: #f1c40f;
+}
+
+/* Harmburger Menu */
+.harmburger{
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px){
+    .nav-links{
+        display: none; /* hides link on small screen */
+        flex-direction: column;
+        background: #2c3e50;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        padding: 10px;
+    }
+    .nav-links li {
+        margin: 10px 0;
+    }
+    .harmburger{
+        display: block; /* shows harmburger menu */
+    }
 }
